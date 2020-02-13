@@ -21,7 +21,7 @@ public class DB {
             String username = (dbUri.getUserInfo() == null) ? null : dbUri.getUserInfo().split(":")[0];
             String password = (dbUri.getUserInfo() == null) ? null : dbUri.getUserInfo().split(":")[1];
 
-            sql2o = new Sql2o("jdbc:postgresql://" + host + ":" + port + path, "moringa", "1234");
+            sql2o = new Sql2o("jdbc:postgresql://" + host + ":" + port + path, "Raywhiz", "1234");
         } catch (URISyntaxException e ) {
         }
     }
